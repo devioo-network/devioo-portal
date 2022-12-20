@@ -65,9 +65,7 @@
 </template>
 
 <script lang="ts">
-import { definePageMeta } from "#imports";
-
-definePageMeta({
-  title: "Signup",
-});
+export default {
+  name: "Signup",
+};
 </script>
