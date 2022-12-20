@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #222323;
+    --secondary: #313131;
+
+    --blue: #42a7ff;
+}
+
+* {
+    box-sizing: border-box;
+}

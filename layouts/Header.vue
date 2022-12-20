@@ -1,6 +1,6 @@
 <template>
-  <header>
-    <h1>Header</h1>
+  <header class="bg-brilliantAzure">
+    <h1 class="text-xl font-bold" >Header</h1>
   </header>
 </template>
 
@@ -9,11 +9,3 @@ export default {
   name: 'Header',
 }
 </script>
-
-<style lang="scss">
-header {
-  background-color: $primary;
-  color: #fff;
-  padding: 10px;
-}
-</style>

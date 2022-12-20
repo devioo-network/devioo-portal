@@ -15,8 +15,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped>
 a {
-  color: $blue;
+  color: var(--blue);
 }
 </style>
