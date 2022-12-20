@@ -3,5 +3,5 @@ COPY . /app
 WORKDIR /app
 RUN npm install
 RUN npm run build
-CMD ["node", ".output/server/index.mjs"]
+ENTRYPOINT ["node", ".output/server/index.mjs"]
 EXPOSE 3000
