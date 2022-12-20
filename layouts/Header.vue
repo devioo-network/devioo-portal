@@ -1,6 +1,6 @@
 <template>
   <header>
-
+    <h1>Header</h1>
   </header>
 </template>
 
@@ -11,5 +11,9 @@ export default {
 </script>
 
 <style lang="scss">
-
+header {
+  background-color: $primary;
+  color: #fff;
+  padding: 10px;
+}
 </style>
