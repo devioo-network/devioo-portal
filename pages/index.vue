@@ -1,10 +1,11 @@
 <template>
   <p>Redirection...</p>
-  <p>If redirection doesn't work, <NuxtLink to="/login">here</NuxtLink>.</p>
+  <p>If redirection doesn't work, click <NuxtLink to="/login">here</NuxtLink>.</p>
 </template>
 
 <script lang="ts">
 import { definePageMeta } from "#imports";
+import { useHead } from "#head";
 
 definePageMeta({
   middleware: ["login-redirect"],
@@ -12,7 +13,13 @@ definePageMeta({
 
 export default {
   name: "Index",
+  setup() {
+    useHead({
+      title: "Redirection...",
+    });
+  },
 };
+
 </script>
 
 <style scoped>

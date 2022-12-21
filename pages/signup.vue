@@ -1,5 +1,4 @@
 <template>
-  <!-- Signup page using tailwind -->
   <div
     class="flex min-h-screen flex-col items-center justify-center bg-gray-100 py-2 sm:px-6 lg:px-8"
   >
@@ -40,27 +39,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="flex w-full justify-center">
           <button
             type="submit"
-            class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            class="bg-brilliantAzure focus:ring-blue group relative flex justify-center rounded-3xl border border-transparent p-4 text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2"
           >
-            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
-              <svg
-                class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 3a1 1 0 011-1h12a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V3zm3.293 1.293a1 1 0 011.414 0L12 8.586l5.293-5.293a1 1 0 111.414 1.414l-5.293 5.293 5.293 5.293a1 1 0 01-1.414 1.414L12 11.414l-5.293 5.293a1 1 0 01-1.414-1.414L10.586 10 5.293 4.707a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span>
-            Sign up
+            <Icon name="circum:login" height="40" width="40"/>
           </button>
         </div>
       </form>
@@ -69,7 +53,14 @@
 </template>
 
 <script lang="ts">
+import { useHead } from "#head";
+
 export default {
   name: "Signup",
+  setup() {
+    useHead({
+      title: "Signup",
+    });
+  },
 };
 </script>

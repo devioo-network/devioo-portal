@@ -1,5 +1,4 @@
 <template>
-  <!-- Create connection page using tailwind -->
   <div
     class="flex min-h-screen flex-col items-center justify-center bg-gray-100 py-2 sm:px-6 lg:px-8"
   >
@@ -103,9 +102,9 @@
         <div class="flex w-full justify-center">
           <button
             type="submit"
-            class="bg-indigo focus:ring-blue group relative flex h-16 w-fit w-16 justify-center rounded-3xl border border-transparent py-2 px-4 text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2"
+            class="bg-brilliantAzure focus:ring-blue group relative flex justify-center rounded-3xl border border-transparent p-4 text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2"
           >
-            <Icon name="circum:login" />
+            <Icon name="circum:login" height="40" width="40"/>
           </button>
         </div>
       </form>
@@ -114,10 +113,14 @@
 </template>
 
 <script lang="ts">
+import { useHead } from "#head";
+
 export default {
   name: "Login",
-  head: {
-    title: "Login",
+  setup() {
+    useHead({
+      title: "Login",
+    });
   },
 };
 </script>
