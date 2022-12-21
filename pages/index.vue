@@ -4,15 +4,15 @@
 </template>
 
 <script lang="ts">
-import {definePageMeta} from "#imports";
+import { definePageMeta } from "#imports";
 
 definePageMeta({
   middleware: ["login-redirect"],
-})
+});
 
 export default {
   name: "Index",
-}
+};
 </script>
 
 <style scoped>

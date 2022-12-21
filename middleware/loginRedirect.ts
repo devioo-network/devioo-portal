@@ -1,3 +1,3 @@
 export default defineNuxtRouteMiddleware(() => {
-    return navigateTo("/login");
-})
+  return navigateTo("/login");
+});
