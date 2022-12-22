@@ -93,6 +93,17 @@
         <div class="mt-6 flex justify-center">
           <button type="submit" class="button">Ouvrir ma session</button>
         </div>
+
+        <div class="mt-4 text-center text-blue-600 underline text-sm">
+          <ul class="list-none">
+            <li>
+              <a href="#">Mot de passe oublié ?</a>
+            </li>
+            <li>
+              <NuxtLink to="/signup">Créer un compte</NuxtLink>
+            </li>
+          </ul>
+        </div>
       </form>
     </div>
   </div>
