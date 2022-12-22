@@ -116,7 +116,7 @@
           <button type="submit" class="button">Je me lance !</button>
         </div>
 
-        <div class="mt-4 text-center text-blue-600 underline text-sm">
+        <div class="mt-4 text-center text-sm text-blue-600 underline">
           <ul class="list-none">
             <li>
               <NuxtLink to="/login">Se connecter</NuxtLink>
