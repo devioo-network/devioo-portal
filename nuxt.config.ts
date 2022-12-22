@@ -19,7 +19,7 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/x-icon",
-          href: "http://devioo.alwaysdata.net/Logo/favicon.ico",
+          href: "https://devioo.alwaysdata.net/Logo/favicon.ico",
         },
         {
           rel: "stylesheet",
