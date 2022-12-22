@@ -1,24 +1,18 @@
 <template>
   <div
-    class="flex min-h-screen flex-col items-center bg-slate-800 justify-center py-2 sm:px-6 lg:px-8"
+    class="flex min-h-screen flex-col items-center justify-center bg-slate-800 py-2 sm:px-6 lg:px-8"
   >
-
     <!-- Login box -->
     <div
       class="w-full max-w-md rounded-lg bg-slate-900 px-4 py-8 shadow-md sm:px-10"
     >
       <div class="mt-4 text-center">
-        <h2 class="mb-4 text-3xl font-extrabold text-white">
-          Connexion
-        </h2>
+        <h2 class="mb-4 text-3xl font-extrabold text-white">Connexion</h2>
       </div>
 
       <!-- Oauth buttons -->
-      <div class="flex w-full flex-col place-items-center mb-5">
-        <button
-          type="button"
-          class="oauth-button google"
-        >
+      <div class="mb-5 flex w-full flex-col place-items-center">
+        <button type="button" class="oauth-button google">
           <svg
             class="mr-2 -ml-1 h-4 w-4"
             aria-hidden="true"
@@ -36,10 +30,7 @@
           </svg>
           Se connecter avec Google
         </button>
-        <button
-          type="button"
-          class="oauth-button github"
-        >
+        <button type="button" class="oauth-button github">
           <svg
             class="mr-2 -ml-1 h-4 w-4"
             aria-hidden="true"
@@ -61,21 +52,45 @@
 
       <form>
         <div class="mb-6">
-          <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adresse e-mail / Nom d'utilisateur</label>
-          <input type="email" id="email" class="input" placeholder="exemple@email.com" required>
+          <label
+            for="email"
+            class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+            >Adresse e-mail / Nom d'utilisateur</label
+          >
+          <input
+            type="email"
+            id="email"
+            class="input"
+            placeholder="exemple@email.com"
+            required
+          />
         </div>
         <div class="mb-6">
-          <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mot de passe</label>
-          <input type="password" id="password" class="input" required>
+          <label
+            for="password"
+            class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
+            >Mot de passe</label
+          >
+          <input type="password" id="password" class="input" required />
         </div>
-        <div class="flex items-start mb-6">
-          <div class="flex items-center h-5">
-            <input id="remember" type="checkbox" value="" class="w-4 h-4 rounded border focus:ring-3 bg-gray-700 border-gray-600 focus:ring-blue-600 ring-offset-gray-800" required>
+        <div class="mb-6 flex items-start">
+          <div class="flex h-5 items-center">
+            <input
+              id="remember"
+              type="checkbox"
+              value=""
+              class="focus:ring-3 h-4 w-4 rounded border border-gray-600 bg-gray-700 ring-offset-gray-800 focus:ring-blue-600"
+              required
+            />
           </div>
-          <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Se souvenir de moi</label>
+          <label
+            for="remember"
+            class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            >Se souvenir de moi</label
+          >
         </div>
 
-        <div class="flex justify-center mt-6">
+        <div class="mt-6 flex justify-center">
           <button type="submit" class="button">Ouvrir ma session</button>
         </div>
       </form>

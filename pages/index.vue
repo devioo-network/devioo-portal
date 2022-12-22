@@ -1,6 +1,8 @@
 <template>
   <p>Redirection...</p>
-  <p>If redirection doesn't work, click <NuxtLink to="/login">here</NuxtLink>.</p>
+  <p>
+    If redirection doesn't work, click <NuxtLink to="/login">here</NuxtLink>.
+  </p>
 </template>
 
 <script lang="ts">
@@ -19,7 +21,6 @@ export default {
     });
   },
 };
-
 </script>
 
 <style scoped>
