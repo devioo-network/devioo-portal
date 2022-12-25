@@ -135,7 +135,7 @@ export default {
   name: "Signup",
   setup() {
     useHead({
-      title: "Signup",
+      title: "Inscription",
     });
   },
 };
