@@ -89,11 +89,11 @@
         </div>
         <div class="mb-6">
           <label
-            for="password"
+            for="password_confirm"
             class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
             >Confirmer le mot de passe</label
           >
-          <input type="password" id="password" class="input" required />
+          <input type="password" id="password_confirm" class="input" required />
         </div>
         <div class="mb-6 flex items-start">
           <div class="flex h-5 items-center">
