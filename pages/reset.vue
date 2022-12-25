@@ -7,7 +7,9 @@
       class="w-full max-w-md rounded-lg bg-slate-900 px-4 py-8 shadow-md sm:px-10"
     >
       <div class="mt-4 text-center">
-        <h2 class="mb-4 text-3xl font-extrabold text-white">Réinitialisation du mot de passe</h2>
+        <h2 class="mb-4 text-3xl font-extrabold text-white">
+          Réinitialisation du mot de passe
+        </h2>
       </div>
 
       <form>
@@ -15,20 +17,15 @@
           <label
             for="password"
             class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-          >Nouveau mot de passe</label
+            >Nouveau mot de passe</label
           >
-          <input
-            type="password"
-            id="password"
-            class="input"
-            required
-          />
+          <input type="password" id="password" class="input" required />
         </div>
         <div class="mb-6">
           <label
             for="password_confirm"
             class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-          >Confirmation du mot de passe</label
+            >Confirmation du mot de passe</label
           >
           <input type="password" id="password_confirm" class="input" required />
         </div>
