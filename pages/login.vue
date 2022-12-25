@@ -97,7 +97,7 @@
         <div class="mt-4 text-center text-sm text-blue-600 underline">
           <ul class="list-none">
             <li>
-              <a href="#">Mot de passe oublié ?</a>
+              <a href="/reset">Mot de passe oublié ?</a>
             </li>
             <li>
               <NuxtLink to="/signup">Créer un compte</NuxtLink>
