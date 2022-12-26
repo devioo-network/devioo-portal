@@ -116,7 +116,7 @@ export default {
   name: "Login",
   setup() {
     useHead({
-      title: "Login",
+      title: "Connexion",
     });
   },
 };
