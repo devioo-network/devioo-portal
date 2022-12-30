@@ -1,6 +1,6 @@
 # DEVIOO Portal
 
-DEVIOO Portal is a login portal created with Nuxt 3. It is available at [portal.devioo.com](portal.devioo.com) and allows users to log in to the DEVIOO platform and modify their account. The login is handled in the backend using a token system that is accessible from the entire devioo.com domain to authenticate users.
+DEVIOO Portal is a login portal created with Nuxt 3. It is available at <https://portal.devioo.com> and allows users to log in to the DEVIOO platform and modify their account. The login is handled in the backend using a token system that is accessible from the entire devioo.com domain to authenticate users.
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ npm run generate
 The generated files are located in the dist/ folder. You can deploy them to your web server using your preferred method.
 
 License
-This project is licensed under the GNU GPLv3 license. You can find the full text of the license in the [https://github.com/devioo-network/devioo-portal/blob/main/LICENSE](LICENSE) file.
+This project is licensed under the GNU GPLv3 license. You can find the full text of the license in the [LICENSE](https://github.com/devioo-network/devioo-portal/blob/main/LICENSE) file.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
