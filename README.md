@@ -38,13 +38,16 @@ npm run dev
 The project should now be accessible at http://localhost:3000/.
 
 ## Deployment
-To deploy the project in production, use npm to generate a static build:
+To deploy the project in production, you can use the following command:
+```bash
+npm run build
+```
+Then you can start the project using:
+```bash
+node .output/server/index.mjs
+```
 
-Copy code
-npm run generate
-The generated files are located in the dist/ folder. You can deploy them to your web server using your preferred method.
-
-License
+## License
 This project is licensed under the GNU GPLv3 license. You can find the full text of the license in the [LICENSE](https://github.com/devioo-network/devioo-portal/blob/main/LICENSE) file.
 
 ## Contributing
