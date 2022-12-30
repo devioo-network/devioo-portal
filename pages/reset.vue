@@ -1,7 +1,6 @@
 <template>
   <PagePrimary>
     <Card title="Réinitialiser mon mot de passe">
-
       <form>
         <InputPrimary
           id="password"
@@ -39,7 +38,14 @@ import PagePrimary from "~/layouts/PagePrimary.vue";
 
 export default {
   name: "Reset",
-  components: { PagePrimary, FormLinks, CheckboxPrimary, InputPrimary, Card, ButtonPrimary },
+  components: {
+    PagePrimary,
+    FormLinks,
+    CheckboxPrimary,
+    InputPrimary,
+    Card,
+    ButtonPrimary,
+  },
   data() {
     return {
       links: [

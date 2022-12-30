@@ -51,7 +51,14 @@ import PagePrimary from "~/layouts/PagePrimary.vue";
 
 export default {
   name: "Signup",
-  components: { PagePrimary, FormLinks, InputPrimary, OauthButtons, Card, ButtonPrimary},
+  components: {
+    PagePrimary,
+    FormLinks,
+    InputPrimary,
+    OauthButtons,
+    Card,
+    ButtonPrimary,
+  },
   data() {
     return {
       links: [
