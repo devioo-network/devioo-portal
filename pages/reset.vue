@@ -1,59 +1,57 @@
 <template>
   <div
-    class="flex min-h-screen flex-col items-center justify-center bg-slate-800 py-2 sm:px-6 lg:px-8"
+    class="flex h-[calc(100vh-4rem)] flex-col items-center justify-center bg-slate-800 py-2 sm:px-6 lg:px-8"
   >
-    <!-- Login box -->
-    <div
-      class="w-full max-w-md rounded-lg bg-slate-900 px-4 py-8 shadow-md sm:px-10"
-    >
-      <div class="mt-4 text-center">
-        <h2 class="mb-4 text-3xl font-extrabold text-white">
-          Réinitialisation du mot de passe
-        </h2>
-      </div>
+    <Card title="Réinitialiser mon mot de passe">
+      <InputPrimary
+        id="password"
+        label="Nouveau mot de passe"
+        type="password"
+      />
 
-      <form>
-        <div class="mb-6">
-          <label
-            for="password"
-            class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-            >Nouveau mot de passe</label
-          >
-          <input type="password" id="password" class="input" required />
-        </div>
-        <div class="mb-6">
-          <label
-            for="password_confirm"
-            class="mb-2 block text-sm font-medium text-gray-900 dark:text-white"
-            >Confirmation du mot de passe</label
-          >
-          <input type="password" id="password_confirm" class="input" required />
-        </div>
+      <InputPrimary
+        id="passwordConfirmation"
+        label="Confirmation du mot de passe"
+        type="password"
+      />
 
-        <div class="mt-6 flex justify-center">
-          <button type="submit" class="button">Continuer</button>
-        </div>
+      <CheckboxPrimary
+        id="iagree"
+        label="J'accepte de ne pouvoir changer de mot de passe qu'une fois tous les 30 jours"
+      />
 
-        <div class="mt-4 text-center text-sm text-blue-600 underline">
-          <ul class="list-none">
-            <li>
-              <NuxtLink to="/login">Se connecter</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/signup">Créer un compte</NuxtLink>
-            </li>
-          </ul>
-        </div>
-      </form>
-    </div>
+      <ButtonPrimary text="Réinitialiser mon mot de passe" />
+
+      <FormLinks :links="links" />
+    </Card>
   </div>
 </template>
 
 <script lang="ts">
 import { useHead } from "#head";
+import ButtonPrimary from "~/components/atoms/ButtonPrimary.vue";
+import Card from "~/components/atoms/Card.vue";
+import InputPrimary from "~/components/atoms/InputPrimary.vue";
+import CheckboxPrimary from "~/components/atoms/CheckboxPrimary.vue";
+import FormLinks from "~/components/atoms/FormLinks.vue";
 
 export default {
   name: "Reset",
+  components: { FormLinks, CheckboxPrimary, InputPrimary, Card, ButtonPrimary },
+  data() {
+    return {
+      links: [
+        {
+          label: "Me connecter",
+          to: "/login",
+        },
+        {
+          label: "Créer un compte",
+          to: "/signup",
+        },
+      ],
+    };
+  },
   setup() {
     useHead({
       title: "Réinitialiser le mot de passe",

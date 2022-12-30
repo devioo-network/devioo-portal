@@ -1,13 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ["@nuxtjs/tailwindcss", "nuxt-icon"],
-  vite: {
-    css: {
-      preprocessorOptions: {
-        scss: {},
-      },
-    },
-  },
+  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxtjs/robots"],
   app: {
     head: {
       title: "DEVIOO Portal",

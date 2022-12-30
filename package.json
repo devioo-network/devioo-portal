@@ -15,11 +15,11 @@
     "nuxt-icon": "^0.1.8",
     "prettier": "^2.8.1",
     "prettier-plugin-tailwindcss": "^0.2.1",
-    "prisma": "^4.7.1",
-    "sass": "^1.57.0",
-    "sass-loader": "^13.2.0"
+    "prisma": "^4.8.0",
+    "vue-loader": "^16.8.3"
   },
   "dependencies": {
-    "@prisma/client": "^4.7.1"
+    "@nuxtjs/robots": "^3.0.0",
+    "@prisma/client": "^4.8.0"
   }
 }

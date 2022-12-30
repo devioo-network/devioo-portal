@@ -1,44 +1,41 @@
-<ins>PREVIEW<ins>: https://portal.devioo.com/
+# DEVIOO Portal
 
-# Nuxt 3 Minimal Starter
+DEVIOO Portal is a login portal created with Nuxt 3. It is available at [portal.devioo.com](portal.devioo.com) and allows users to log in to the DEVIOO platform and modify their account. The login is handled in the backend using a token system that is accessible from the entire devioo.com domain to authenticate users.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Prerequisites
 
-## Setup
+- Node.js
+- Nuxt.js
 
-Make sure to install the dependencies:
+## Installation
+
+1. Clone the Git repository to your computer:
 
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+git clone https://github.com/devioo-network/devioo-portal.git
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
-
+2. Install the project dependencies using npm:
+```bash
+npm install
+```
+3. Start the development server using npm:
 ```bash
 npm run dev
 ```
+The project should now be accessible at http://localhost:3000/.
 
-## Production
+## Deployment
+To deploy the project in production, use npm to generate a static build:
 
-Build the application for production:
+Copy code
+npm run generate
+The generated files are located in the dist/ folder. You can deploy them to your web server using your preferred method.
 
-```bash
-npm run build
-```
+License
+This project is licensed under the GNU GPLv3 license. You can find the full text of the license in the [https://github.com/devioo-network/devioo-portal/blob/main/LICENSE](LICENSE) file.
 
-Locally preview production build:
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+![DEVIOO_BANNER](https://devioo.alwaysdata.net/Others/DEVIOO_BANNER.png)
