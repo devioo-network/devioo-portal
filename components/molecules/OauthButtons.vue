@@ -9,9 +9,9 @@
     />
 
     <OAuthButton
-      focus-ring-class="focus:ring-[#7289DA]/50"
-      hover-background-class="hover:bg-[#7289DA]/90"
-      background-class="bg-[#7289DA]"
+      focus-ring-class="focus:ring-[#5865F2]/50"
+      hover-background-class="hover:bg-[#5865F2]/90"
+      background-class="bg-[#5865F2]"
       icon="ic:baseline-discord"
       :label="textLabel + ' avec Discord'"
     />
