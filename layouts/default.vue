@@ -4,10 +4,6 @@
       <h1 class="text-2xl font-bold text-white">DEVIOO Portal</h1>
     </div>
   </header>
-</template>
 
-<script lang="ts">
-export default {
-  name: "Header",
-};
-</script>
+  <slot />
+</template>
