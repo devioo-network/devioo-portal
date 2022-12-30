@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center bg-slate-800 py-2 sm:px-6 lg:px-8"
-  >
+  <PagePrimary>
     <Card title="Connexion">
       <OauthButtons isConnection />
 
@@ -27,7 +25,7 @@
         <FormLinks :links="links" />
       </form>
     </Card>
-  </div>
+  </PagePrimary>
 </template>
 
 <script lang="ts">
@@ -38,10 +36,12 @@ import CheckboxPrimary from "~/components/atoms/CheckboxPrimary.vue";
 import Card from "~/components/atoms/Card.vue";
 import OauthButtons from "~/components/molecules/OauthButtons.vue";
 import FormLinks from "~/components/atoms/FormLinks.vue";
+import PagePrimary from "~/components/atoms/PagePrimary.vue";
 
 export default {
   name: "Login",
   components: {
+    PagePrimary,
     FormLinks,
     OauthButtons,
     Card,
