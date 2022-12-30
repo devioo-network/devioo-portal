@@ -3,35 +3,37 @@
     <Card title="Inscription">
       <OauthButtons />
 
-      <InputPrimary
-        id="username"
-        type="text"
-        label="Nom d'utilisateur"
-        placeholder="pseudo cool"
-      />
+      <form>
+        <InputPrimary
+          id="username"
+          type="text"
+          label="Nom d'utilisateur"
+          placeholder="pseudo cool"
+        />
 
-      <InputPrimary
-        id="email"
-        type="email"
-        label="Adresse e-mail"
-        placeholder="exemple@email.com"
-      />
+        <InputPrimary
+          id="email"
+          type="email"
+          label="Adresse e-mail"
+          placeholder="exemple@email.com"
+        />
 
-      <InputPrimary
-        id="password"
-        type="password"
-        label="Mot de passe"
-        placeholder="********"
-      />
+        <InputPrimary
+          id="password"
+          type="password"
+          label="Mot de passe"
+          placeholder="********"
+        />
 
-      <InputPrimary
-        id="passwordConfirmation"
-        type="password"
-        label="Confirmation du mot de passe"
-        placeholder="********"
-      />
+        <InputPrimary
+          id="passwordConfirmation"
+          type="password"
+          label="Confirmation du mot de passe"
+          placeholder="********"
+        />
 
-      <ButtonPrimary text="Je me lance" />
+        <ButtonPrimary text="Je me lance" />
+      </form>
 
       <FormLinks :links="links" />
     </Card>

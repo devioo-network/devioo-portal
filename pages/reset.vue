@@ -1,24 +1,27 @@
 <template>
   <PagePrimary>
     <Card title="Réinitialiser mon mot de passe">
-      <InputPrimary
-        id="password"
-        label="Nouveau mot de passe"
-        type="password"
-      />
 
-      <InputPrimary
-        id="passwordConfirmation"
-        label="Confirmation du mot de passe"
-        type="password"
-      />
+      <form>
+        <InputPrimary
+          id="password"
+          label="Nouveau mot de passe"
+          type="password"
+        />
 
-      <CheckboxPrimary
-        id="iagree"
-        label="J'accepte de ne pouvoir changer de mot de passe qu'une fois tous les 30 jours"
-      />
+        <InputPrimary
+          id="passwordConfirmation"
+          label="Confirmation du mot de passe"
+          type="password"
+        />
 
-      <ButtonPrimary text="Réinitialiser mon mot de passe" />
+        <CheckboxPrimary
+          id="iagree"
+          label="J'accepte de ne pouvoir changer de mot de passe qu'une fois tous les 30 jours"
+        />
+
+        <ButtonPrimary text="Réinitialiser mon mot de passe" />
+      </form>
 
       <FormLinks :links="links" />
     </Card>
