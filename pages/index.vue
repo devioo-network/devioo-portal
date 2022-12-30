@@ -10,7 +10,7 @@
 <script lang="ts">
 import { definePageMeta } from "#imports";
 import { useHead } from "#head";
-import PagePrimary from "~/components/atoms/PagePrimary.vue";
+import PagePrimary from "~/layouts/PagePrimary.vue";
 
 definePageMeta({
   middleware: ["login-redirect"],

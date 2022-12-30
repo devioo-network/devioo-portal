@@ -27,12 +27,12 @@
 
 <script lang="ts">
 import { useHead } from "#head";
-import ButtonPrimary from "~/components/atoms/ButtonPrimary.vue";
-import Card from "~/components/atoms/Card.vue";
-import InputPrimary from "~/components/atoms/InputPrimary.vue";
-import CheckboxPrimary from "~/components/atoms/CheckboxPrimary.vue";
-import FormLinks from "~/components/atoms/FormLinks.vue";
-import PagePrimary from "~/components/atoms/PagePrimary.vue";
+import ButtonPrimary from "~/components/atoms/Buttons/ButtonPrimary.vue";
+import Card from "~/layouts/Card.vue";
+import InputPrimary from "~/components/atoms/Inputs/InputPrimary.vue";
+import CheckboxPrimary from "~/components/atoms/Inputs/CheckboxPrimary.vue";
+import FormLinks from "~/components/atoms/Lists/FormLinks.vue";
+import PagePrimary from "~/layouts/PagePrimary.vue";
 
 export default {
   name: "Reset",
