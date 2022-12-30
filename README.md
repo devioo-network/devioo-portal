@@ -1,6 +1,16 @@
-![DEVIOO Portal][https://devioo.alwaysdata.net/Banners/deviooportal_banner.png]
+<p align="center">
+  <img src="https://devioo.alwaysdata.net/Banners/deviooportal_banner.png" height="360" width="640" />
+</p>
 
-# DEVIOO Portal
+<hr>
+
+<p align="center">
+  <img alt="Discord" src="https://img.shields.io/discord/752965247035375626">
+   <img alt="GitHub" src="https://img.shields.io/github/license/devioo-network/devioo-portal">
+   <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/devioo-network/devioo-portal">
+   <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/devioo-network/devioo-portal">
+   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/devioo-network/devioo-portal">
+</p>
 
 DEVIOO Portal is a login portal created with Nuxt 3. It is available at <https://portal.devioo.com> and allows users to log in to the DEVIOO platform and modify their account. The login is handled in the backend using a token system that is accessible from the entire devioo.com domain to authenticate users.
 
