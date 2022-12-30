@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex h-[calc(100vh-4rem)] flex-col items-center justify-center bg-slate-800 py-2 sm:px-6 lg:px-8"
-  >
+  <PagePrimary>
     <Card title="Inscription">
       <OauthButtons />
 
@@ -37,20 +35,21 @@
 
       <FormLinks :links="links" />
     </Card>
-  </div>
+  </PagePrimary>
 </template>
 
 <script lang="ts">
 import { useHead } from "#head";
-import ButtonPrimary from "~/components/atoms/ButtonPrimary.vue";
-import Card from "~/components/atoms/Card.vue";
+import ButtonPrimary from "~/components/atoms/Buttons/ButtonPrimary.vue";
+import Card from "~/layouts/Card.vue";
 import OauthButtons from "~/components/molecules/OauthButtons.vue";
-import InputPrimary from "~/components/atoms/InputPrimary.vue";
-import FormLinks from "~/components/atoms/FormLinks.vue";
+import InputPrimary from "~/components/atoms/Inputs/InputPrimary.vue";
+import FormLinks from "~/components/atoms/Lists/FormLinks.vue";
+import PagePrimary from "~/layouts/PagePrimary.vue";
 
 export default {
   name: "Signup",
-  components: { FormLinks, InputPrimary, OauthButtons, Card, ButtonPrimary },
+  components: { PagePrimary, FormLinks, InputPrimary, OauthButtons, Card, ButtonPrimary},
   data() {
     return {
       links: [

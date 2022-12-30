@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex h-[calc(100vh-4rem)] flex-col items-center justify-center bg-slate-800 py-2 sm:px-6 lg:px-8"
-  >
+  <PagePrimary>
     <Card title="Réinitialiser mon mot de passe">
       <InputPrimary
         id="password"
@@ -24,20 +22,21 @@
 
       <FormLinks :links="links" />
     </Card>
-  </div>
+  </PagePrimary>
 </template>
 
 <script lang="ts">
 import { useHead } from "#head";
-import ButtonPrimary from "~/components/atoms/ButtonPrimary.vue";
-import Card from "~/components/atoms/Card.vue";
-import InputPrimary from "~/components/atoms/InputPrimary.vue";
-import CheckboxPrimary from "~/components/atoms/CheckboxPrimary.vue";
-import FormLinks from "~/components/atoms/FormLinks.vue";
+import ButtonPrimary from "~/components/atoms/Buttons/ButtonPrimary.vue";
+import Card from "~/layouts/Card.vue";
+import InputPrimary from "~/components/atoms/Inputs/InputPrimary.vue";
+import CheckboxPrimary from "~/components/atoms/Inputs/CheckboxPrimary.vue";
+import FormLinks from "~/components/atoms/Lists/FormLinks.vue";
+import PagePrimary from "~/layouts/PagePrimary.vue";
 
 export default {
   name: "Reset",
-  components: { FormLinks, CheckboxPrimary, InputPrimary, Card, ButtonPrimary },
+  components: { PagePrimary, FormLinks, CheckboxPrimary, InputPrimary, Card, ButtonPrimary },
   data() {
     return {
       links: [

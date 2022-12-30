@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex h-[calc(100vh-4rem)] flex-col items-center justify-center bg-slate-800 py-2 sm:px-6 lg:px-8"
-  >
+  <PagePrimary>
     <Card title="Connexion">
       <OauthButtons isConnection />
 
@@ -27,21 +25,23 @@
         <FormLinks :links="links" />
       </form>
     </Card>
-  </div>
+  </PagePrimary>
 </template>
 
 <script lang="ts">
 import { useHead } from "#head";
-import ButtonPrimary from "~/components/atoms/ButtonPrimary.vue";
-import InputPrimary from "~/components/atoms/InputPrimary.vue";
-import CheckboxPrimary from "~/components/atoms/CheckboxPrimary.vue";
-import Card from "~/components/atoms/Card.vue";
+import ButtonPrimary from "~/components/atoms/Buttons/ButtonPrimary.vue";
+import InputPrimary from "~/components/atoms/Inputs/InputPrimary.vue";
+import CheckboxPrimary from "~/components/atoms/Inputs/CheckboxPrimary.vue";
+import Card from "~/layouts/Card.vue";
 import OauthButtons from "~/components/molecules/OauthButtons.vue";
-import FormLinks from "~/components/atoms/FormLinks.vue";
+import FormLinks from "~/components/atoms/Lists/FormLinks.vue";
+import PagePrimary from "~/layouts/PagePrimary.vue";
 
 export default {
   name: "Login",
   components: {
+    PagePrimary,
     FormLinks,
     OauthButtons,
     Card,

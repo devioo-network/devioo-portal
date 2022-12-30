@@ -27,7 +27,7 @@
 </template>
 
 <script lang="ts">
-import OAuthButton from "~/components/atoms/OAuthButton.vue";
+import OAuthButton from "~/components/atoms/Buttons/OAuthButton.vue";
 
 export default defineComponent({
   name: "OauthButtons",
