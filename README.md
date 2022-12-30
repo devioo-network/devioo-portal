@@ -1,3 +1,5 @@
+![DEVIOO Portal][https://devioo.alwaysdata.net/Banners/deviooportal_banner.png]
+
 # DEVIOO Portal
 
 DEVIOO Portal is a login portal created with Nuxt 3. It is available at <https://portal.devioo.com> and allows users to log in to the DEVIOO platform and modify their account. The login is handled in the backend using a token system that is accessible from the entire devioo.com domain to authenticate users.
