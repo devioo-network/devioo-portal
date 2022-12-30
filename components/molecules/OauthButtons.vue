@@ -1,24 +1,24 @@
 <template>
   <div class="mb-5 flex w-full flex-col place-items-center">
     <OAuthButton
-      on-focus-ring-class="ring-[#4285F4]/50"
-      on-hover-background-class="bg-[#4285F4]/90"
+      focus-ring-class="focus:ring-[#4285F4]/50"
+      hover-background-class="hover:bg-[#4285F4]/90"
       background-class="bg-[#4285F4]"
       icon="bxl:google"
       :label="textLabel + ' avec Google'"
     />
 
     <OAuthButton
-      on-focus-ring-class="ring-[#7289DA]/50"
-      on-hover-background-class="bg-[#7289DA]/90"
+      focus-ring-class="focus:ring-[#7289DA]/50"
+      hover-background-class="hover:bg-[#7289DA]/90"
       background-class="bg-[#7289DA]"
       icon="ic:baseline-discord"
       :label="textLabel + ' avec Discord'"
     />
 
     <OAuthButton
-      on-focus-ring-class="ring-[#333]/50"
-      on-hover-background-class="bg-[#333]/90"
+      focus-ring-class="focus:ring-[#333]/50"
+      hover-background-class="hover:bg-[#333]/90"
       background-class="bg-[#333]"
       icon="mdi:github"
       :label="textLabel + ' avec Github'"
